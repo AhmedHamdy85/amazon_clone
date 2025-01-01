@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+a{
+    text-decoration: none ;
+    color: inherit ;
+}
+nav{
+
+    display: flex  ;
+    justify-content: space-between ;
+    align-items: center;
+    background-color: #131921 ;
+    padding: 10px 20px ;
+    color: white ;
+    /* box-shadow: 0 5px 10px rgba(0,0,0,0.1); */
+}
+
+.nav-country {
+    display: flex ;
+    align-items: center ;
+    margin-left: 15px ;
+    font-size: 13px ;
+    color: #c4c4c4 ;
+}
+.nav-country p{
+    margin-bottom: 0;
+}
+.nav-country h1{
+    font-size: 14px ;
+  color: #fff ;
+}
+
+
+
+.borderitem:hover{
+    border: 1px solid #ffd64f ;
+   
+}
+.nav-text{
+    /* margin-left: 15px ; */
+    font-size: 10px ;
+
+}
+.nav-text p{
+    margin-bottom: 0 ;
+}
+.nav-text h1{
+    font-size: 14px ;
+    
+}
+.nav-cart{
+    display: flex ;
+    align-items: center ;
+    gap: 5px ;
+    justify-content: end ;
+    margin-left: 15px ;
+
+}
+.nav-cart h4{
+    margin-bottom: 0 ;
+}
+
+.nav-bottom{
+   display: flex ;
+   align-items: center ;
+   gap: 20px ;
+    padding: 8px 20px ;
+    background: #232f3e ; 
+    color: #fff ;
+    font-size: 15px ;
+}
+.nav-bottom p{
+    margin-bottom: 0 ;
+}
+.nav-bottom div{
+    display: flex ;
+    align-items: center ;
+    gap: 5px ;
+    font-weight: 500 ;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    background-color: #131921;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

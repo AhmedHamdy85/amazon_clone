@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid d-flex ">
+      <a class="navbar-brand borderitem" href="#">
+        <img src="assets/amazon_logo.png" width="100" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <div class="nav-item nav-country d-flex borderitem">
+          <img src="assets/location_icon.png" height="20" alt="">
+          <div>
+            <p>Deliver to</p>
+            <h1>UnitedKingdom</h1>
+          </div>
+        </div>
+        <!-- Form Section -->
+        <form class="container-fluid d-flex flex-grow-1 ">
+          <div class="input-group flex-grow-1">
+            <span class="input-group-text" id="basic-addon1">
+              <div class="d-flex align-items-center">
+                <p class="mb-0">All</p>
+                <img src="assets/dropdown_icon.png" height="12" alt="">
+              </div>
+            </span>
+            <input type="text" class="form-control" placeholder="amazon" aria-label="Search" aria-describedby="basic-addon1">
+            <span class="input-group-text bg-warning">
+              <img src="assets/search_icon.png" height="20" alt="">
+            </span>
+          </div>
+        </form>
+        <!-- End Form Section -->
+    
+        <div class="d-flex align-items-center mt-sm-2">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 borderitem">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="./assets/us_flag.png" width="25" alt="">
+                <p class=" mb-0">EN</p>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+         
+            <div  class="nav-text borderitem   "style="margin-right: 10px;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <p>Hello, Sign Out</p>
+              <div class="d-flex align-items-center" >
+                <h1>Account&Lists </h1>
+                <img src="./assets/dropdown_icon.png" width="8px" alt="">
+  
+              </div>
+            </div>
+             <!-- confirmation modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Sign Out</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Are you sure you want to sign out?
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button onclick="location.replace('login.html')" type="button" class="btn btn-warning">Sin Out</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+         
+          <div class="nav-text borderitem">
+            <p>Return</p>
+            <h1>&Orders</h1>
+          </div>
+          <div class="nav-cart borderitem">
+            <img src="assets/cart_icon.png" width="30" alt="">
+            <h4>Cart</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+
+<div class="nav-bottom ">
+  <div class="borderitem">
+    <img src="assets/menu_icon.png" width="25" alt="">
+    <p>All</p>
+  </div>
+  <p class="borderitem">Today's Deals</p>
+  <p class="borderitem">Customer Service</p>
+  <p class="borderitem">Gift Cards</p>
+  
+  <p class="borderitem">Registry</p>
+  <p class="borderitem">Sell</p>
+</div>
+
+
+<div  class="container">
+  <div class="row g-4 mt-1 "id="product-list">
+ 
+  
+   
+
+  
+  </div>
+</div>
+
+
+
+<div class="pagination">
+  <button id="prev-btn" class="btn btn-warning" disabled>Previous</button>
+  <span id="page-info"></span>
+  <button id="next-btn" class="btn btn-warning" >Next</button>
+</div>
+
+
+<footer>
+  <img src="./assets/amazon_logo.png" width="100" alt="">
+  <p>&copy; 2023 Amazon Clone. All rights reserved. </p>
+
+</footer>
+  
+
+<script src="./JS/home.js"></script>
+</body>
+</html>
